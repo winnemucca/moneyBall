@@ -1,0 +1,49 @@
+extends layout
+
+block content 
+	row
+		.userProfile
+			.col-md-3.sidebar
+
+				.list-group.left 
+					.user-info
+						i.fa.fa-user User Name
+					.home
+						i.fa.fa-home home
+					.player-search
+						i.fa.fa-search Search
+					.rules
+						i.fa.fa-book Rule Book
+					.data
+						i.fa.fa-bar-chart Charts
+
+
+			.col-md-9.main 
+				.jumbotron
+					.profile-background
+						h1 Team Name
+						h2 background 
+				.list-group.right
+					.col-md-4
+						.salary
+							h4 Player salary
+							p  $0:00
+					.col-md-4
+						.capSpace
+							h4 capSpace
+							p $0:00
+					.col-md-4
+						.salaryCap
+							h4 SalaryCap
+							p $63.000.000.00 
+
+	row
+		.col-md-12
+			table.table.table-hover.table-responsive
+				tr
+					td Player Name
+					td Scoring Rating:
+					td Ball Care Rating:
+					td Offensive Rebounding 
+					td Foul Line Shooting:
+

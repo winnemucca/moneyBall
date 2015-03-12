@@ -1,0 +1,28 @@
+concatenating files>
+-head over to plugins
+-- npm install gulp-concat --save-dev
+-- *.js will look for all js files
+-- our goal is to concatenate all of our files
+- /**/*.js     so ** means 0 and it goes up from there
+--  http://slides.com/rainelourie/gulp#/3    (this website will help explain)
+-- variable name will be concat call it inside of a paths object
+--
+
+
+2.  inside of our task   gulp.task('concat',function(){ return gulp.src(paths.concat.src
+	.pipe(concat('output.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest(paths.concat.dest))
+)})
+
+<<<<< in command line you will run gulp concat>>>>
+
+
+step 3 do a minification
+
+require uglify
+--npm install gulp-uglify --save-dev
+
+
+when running gulp make sure you call gulp dependency name
+in our example the name is scripts

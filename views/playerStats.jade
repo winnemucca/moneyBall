@@ -1,0 +1,36 @@
+extends layout
+block content
+	form.indPlayerStat
+		input.form-group.name(name="name", type="text", placeholder="player search")
+		input.form-group.Id(name="id",type="text",placeholder="id")
+		input.submission(type="submit")
+
+	h2 Player list-group
+	table#player-list.display(data-order=[[1,"asc"]] width='100%' class="order-column" data-page-length="25") 
+		thead
+			tr 
+				th.apiID ID
+				th.name(data-class-name="priority") Name
+				th.team Team 
+				th.position Position
+				th.self Route
+		tfoot
+			tr
+				th.apiID ID
+				th.name Name
+				th.team Team 
+				th.position Position
+				th.route Route
+		tbody
+			for player in data
+				tr 
+					td.apiID(data.id="#{player.Name}")
+						strong= player.Id 
+					td.team= player.Name
+					td.team= player.Team
+					td.position= player.Position
+					td.route(data.id="#{player.Self}"): button.btn.btn-danger.search Search Avg
+					
+
+
+

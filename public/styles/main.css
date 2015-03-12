@@ -1,0 +1,68 @@
+body{
+/*position: relative;*/
+}
+
+#player-list {
+	border-collapse: separate;
+	border-spacing: 0;
+	color: #4a4a4d;
+	width: 100%;
+}
+#player-list th td{
+	border: 1px solid black;
+	padding: 10px 15px;
+	vertical-align: middle;
+}
+#player-list th{
+	height: 50px;
+	font-weight: bold;
+	text-align: center;
+	/*background: #395870;
+	color: #fff;*/
+}
+#player-list th:first-child {
+	text-align: left;
+}
+#player-list tbody tr:nth-child(even){
+background: #f0f0f2;
+}
+
+#player-list {
+	background: #395870;
+	color: black;
+}
+#player-list td:first-child {
+	border-left: 1px solid #cecfd5;
+	padding:10px;
+}
+
+.userProfile{
+	background: #505050 ;
+	height: 100vh;
+}
+.list-group {
+	color: white;
+}
+.sidebar .list-group{
+	font-size: 32px;
+	padding: 15px 0;
+	text-align: right;
+}
+
+.salary {
+	background: blue;
+	text-align: center;
+}
+
+.capSpace {
+	background: green;
+	text-align: center;
+}
+
+.salaryCap {
+	background: purple;
+	text-align: center;
+}
+
+/**/
+
